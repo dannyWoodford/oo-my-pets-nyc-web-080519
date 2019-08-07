@@ -1,5 +1,6 @@
 class Cat
   
+  @@all = []
   attr_reader :name 
   attr_accessor :owner, :mood
   
@@ -10,6 +11,8 @@ class Cat
     @mood = "nervous" 
   end 
   
-    
+    def self.all 
+      @@all 
+    end 
   
 end
