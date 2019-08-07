@@ -25,7 +25,11 @@ class Owner
         @@all.clear
       end 
       
-        def cats 
-          
+        def my_cats 
+          self.select { |cat| cat.owner ==self}
+        end 
+        
+        def my_dogs 
+          self.select { |dog| dog.owner ==self}
         end 
 end
