@@ -9,6 +9,7 @@ class Cat
     @owner = owner 
     @mood = "nervous" 
   end 
- 
+  
+    
   
 end
