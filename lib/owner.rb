@@ -43,6 +43,15 @@ class Owner
         end 
         
         def walk_dogs
-          Dog.mood = "happy"
+          dogs.map do |dog|
+            dog.mood = "happy"
+          end
         end 
+        
+        def walk_dogs
+          dogs.map do |dog|
+          dog.mood = "happy"
+          end
+        end 
+        
 end
