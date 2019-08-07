@@ -48,9 +48,9 @@ class Owner
           end
         end 
         
-        def walk_cats
+        def feed_cats
           cats.map do |cat|
-          cat.mood = "happy"
+            cat.mood = "happy"
           end
         end 
         
