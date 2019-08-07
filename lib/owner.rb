@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   
   attr_reader :name, :species
@@ -34,6 +35,7 @@ class Owner
         end 
         
         def buy_cat(new_cat)
-          Cat.all << new_cat
+          Cat.all 
+          binding.pry
         end 
 end
